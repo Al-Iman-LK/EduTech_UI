@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech - Modern Learning Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="font-inter antialiased">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-white" id="logo">EduTech</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-white hover:text-blue-500 px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#courses" class="nav-link text-white hover:text-blue-500 px-3 py-2 text-sm font-medium transition-colors">Courses</a>
+                        <a href="#features" class="nav-link text-white hover:text-blue-500 px-3 py-2 text-sm font-medium transition-colors">Features</a>
+                        <a href="#about" class="nav-link text-white hover:text-blue-500 px-3 py-2 text-sm font-medium transition-colors">About</a>
+                        <a href="#pricing" class="nav-link text-white hover:text-blue-500 px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                        <a href="dashboard.html" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">Dashboard</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-blue-500 focus:outline-none focus:text-blue-500">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link text-gray-900 hover:text-blue-500 block px-3 py-2 text-base font-medium">Home</a>
+                <a href="#courses" class="mobile-nav-link text-gray-900 hover:text-blue-500 block px-3 py-2 text-base font-medium">Courses</a>
+                <a href="#features" class="mobile-nav-link text-gray-900 hover:text-blue-500 block px-3 py-2 text-base font-medium">Features</a>
+                <a href="#about" class="mobile-nav-link text-gray-900 hover:text-blue-500 block px-3 py-2 text-base font-medium">About</a>
+                <a href="#pricing" class="mobile-nav-link text-gray-900 hover:text-blue-500 block px-3 py-2 text-base font-medium">Pricing</a>
+                <a href="dashboard.html" class="bg-blue-500 text-white block px-3 py-2 rounded-lg mx-3 text-center">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+                    Create your
+                    <span class="text-blue-500">learning journey</span>
+                    today
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Modern Learning Management System for online education and course management.
+                    Build, learn, and grow with our comprehensive platform.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-all duration-300 transform hover:scale-105">
+                        Get Started
+                    </button>
+                    <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-semibold hover:border-blue-500 hover:text-blue-500 transition-colors">
+                        View Courses
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Have everything you need
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Let's see what makes our platform super powerful and user-friendly!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chalkboard-teacher text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Course Creation</h3>
+                    <p class="text-gray-600">Create and manage comprehensive courses with our intuitive course builder and content management system.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-2xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Video Streaming</h3>
+                    <p class="text-gray-600">High-quality video streaming and content delivery for seamless online learning experiences.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Progress Tracking</h3>
+                    <p class="text-gray-600">Advanced analytics and progress tracking to monitor student performance and engagement.</p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-clipboard-check text-2xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Assignments & Quizzes</h3>
+                    <p class="text-gray-600">Interactive assignments and quiz modules with automated grading and feedback systems.</p>
+                </div>
+
+                <!-- Feature Card 5 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-2xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Discussion Forums</h3>
+                    <p class="text-gray-600">Collaborative discussion forums to foster community learning and peer interaction.</p>
+                </div>
+
+                <!-- Feature Card 6 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-certificate text-2xl text-indigo-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Certificates</h3>
+                    <p class="text-gray-600">Automated certificate generation upon course completion with customizable templates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Popular Courses
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our most popular courses designed by industry experts
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card 1 -->
+                <div class="course-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-code text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Development</span>
+                            <span class="text-yellow-500">★★★★★</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Web Development Bootcamp</h3>
+                        <p class="text-gray-600 mb-4">Complete guide to modern web development with React, Node.js, and MongoDB.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-500">$99</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Analytics</span>
+                            <span class="text-yellow-500">★★★★☆</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Data Science Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Learn data analysis, visualization, and machine learning with Python.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-500">$129</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-palette text-4xl text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Design</span>
+                            <span class="text-yellow-500">★★★★★</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">UI/UX Design Mastery</h3>
+                        <p class="text-gray-600 mb-4">Master user interface and user experience design principles and tools.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-blue-500">$89</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500 hover:text-white transition-colors">
+                    View All Courses
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Transparent pricing
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose from flexible pricing options designed to fit your learning needs and budget with no hidden fees.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="pricing-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Basic</h3>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-blue-500">$29</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                        <ul class="text-left space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Access to 50+ courses</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Basic progress tracking</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Community access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Mobile app access</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-100 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                            Choose Plan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card bg-blue-500 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform scale-105">
+                    <div class="text-center">
+                        <div class="bg-white text-blue-500 text-sm font-semibold px-3 py-1 rounded-full inline-block mb-4">
+                            POPULAR
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Pro</h3>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-white">$59</span>
+                            <span class="text-blue-100">/month</span>
+                        </div>
+                        <ul class="text-left space-y-3 mb-8 text-white">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-300 mr-3"></i>
+                                <span>Access to all courses</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-300 mr-3"></i>
+                                <span>Advanced analytics</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-300 mr-3"></i>
+                                <span>Priority support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-300 mr-3"></i>
+                                <span>Certificates</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-300 mr-3"></i>
+                                <span>1-on-1 mentoring</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-white text-blue-500 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Choose Plan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Enterprise</h3>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-blue-500">$199</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                        <ul class="text-left space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Custom course creation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>White-label solution</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>API access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Dedicated support</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-3"></i>
+                                <span>Custom integrations</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-gray-100 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                            Contact Sales
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-500 to-indigo-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Start now, create your learning journey today
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Join thousands of learners who are already advancing their careers with our platform
+            </p>
+            <button class="bg-white text-blue-500 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors transform hover:scale-105">
+                Get Started Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">EduTech</h3>
+                    <p class="text-gray-400">Modern Learning Management System for the future of education.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 EduTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
